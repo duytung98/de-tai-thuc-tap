@@ -419,10 +419,14 @@ body {
   grid-template-columns: auto;
   padding-top: 3rem;
   position: relative;
+  
 }
 .product1-sp > #add {
   display: none;
   position: absolute;
+  border-radius: 20px;
+  font-weight: bold;
+  opacity: 85%;
 }
 .product1-sp:hover > #add {
   display: block;
