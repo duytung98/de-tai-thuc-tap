@@ -16,7 +16,7 @@
         $p = $_POST['password'];
         if(!empty($email)&&!empty($p)&&!empty($fullname)){
             echo "<pre>";
-            
+            // md5: mã hóa password
             $sql = "insert into `users` (`fullname`, `email`, `password`) values('$fullname', '$email',md5('$p'))";
             if($conn->query($sql) === true){
                 echo "Đăng ký thành công";
