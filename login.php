@@ -15,7 +15,7 @@
     $db = mysqli_connect($host, $username, $password, $dbname);
 
     // truy vấn dữ liệu- tìm emaill có trong csdl ko?
-    $sql = "SELECT * FROM users WHERE email='$u' and password= '$p'";
+    $sql = "SELECT * FROM users WHERE email='$u' and password= md5('$p')";
     // // thực thi truy vấn
     $rs = mysqli_query($db,$sql);
 
